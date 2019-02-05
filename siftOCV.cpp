@@ -20,7 +20,8 @@ void readme();
 int main( int argc, char** argv )
 {
     if( argc != 2 ){ 
-        readme(); return -1;
+        readme();
+        return -1;
     }
 
     Mat img = imread( argv[1], IMREAD_GRAYSCALE);
